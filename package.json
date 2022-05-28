@@ -1,0 +1,70 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-decoupled-document": "^33.0.0",
+    "@ckeditor/ckeditor5-react": "^4.0.0",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/lab": "^5.0.0-alpha.73",
+    "@mui/material": "^5.4.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "ag-grid-react": "^26.2.0",
+    "antd": "^4.19.2",
+    "axios": "^0.24.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
+    "react-csv": "^2.2.2",
+    "react-date-picker": "^8.4.0",
+    "react-dom": "^17.0.2",
+    "react-number-format": "^4.9.1",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "5.2",
+    "react-router-last-location": "^2.0.1",
+    "react-scripts": "^5.0.0",
+    "react-select": "^5.2.1",
+    "react-stepper-horizontal": "^1.0.11",
+    "react-to-print": "^2.14.4",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "socket.io-client": "^4.4.1",
+    "sweetalert2": "^11.4.4",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

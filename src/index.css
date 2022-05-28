@@ -1,0 +1,618 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3b3d42;
+  font-size: 13px;
+  /* background-image: url('../public/images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten; */
+}
+
+.container {
+  padding: 10px 20px;
+  width: 100%;
+  cursor: default;
+  font-size: 13px;
+}
+
+.pageHeader {
+  color: #404040;
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-bottom: 20px !important; */
+}
+
+.pageHeaderHr {
+  height: 3px;
+  background-color: #191f2c;
+  margin-bottom: 15px;
+}
+
+.diplayTable {
+  /* border: 1px solid #3b3d42; */
+  cursor: text;
+  width: 100%;
+}
+
+.diplayTable thead th {
+  border: 1px solid #191f2c;
+  font-weight: 500;
+  background-color: #191f2c;
+  color: whitesmoke;
+}
+
+.diplayTable tbody td {
+  border: 1px solid #3b3d42;
+  padding: 3px 5px;
+}
+
+.diplayTable tbody tr:hover {
+  background-color: #3b3d4257;
+}
+
+.diplayTable tfoot th {
+  border: 1px solid #191f2c;
+  font-weight: 500;
+  background-color: #191f2c;
+  color: whitesmoke;
+}
+
+.diplayTableViewBtn {
+  font-style: italic;
+  padding: 0px 5px;
+  color: #191f2c;
+}
+
+.diplayTableViewBtn:focus {
+  border: none;
+  outline: none;
+}
+
+.diplayTableEditBtn {
+  font-style: italic;
+  padding: 0px 5px;
+  color: rgb(95, 143, 23);
+}
+
+.diplayTableEditBtn:focus {
+  border: none;
+  outline: none;
+}
+
+.diplayTableDeleteBtn {
+  font-style: italic;
+  padding: 0px 5px;
+  color: rgb(104, 17, 17);
+}
+
+.diplayTableDeleteBtn:focus {
+  border: none;
+  outline: none;
+}
+
+.dashboardBtn {
+  margin: 5px 0px;
+  font-style: italic;
+  padding: 3px 10px;
+  color: #3b3d42;
+  font-weight: 500;
+  border: 2px solid rgb(173, 44, 44);
+  border-radius: 6px;
+}
+
+.dashboardBtn:disabled {
+  border-color: #3b3d42;
+  outline: none;
+}
+
+.dashboardBtn:hover:not([disabled]) {
+  border-color: greenyellow;
+  outline: none;
+}
+
+.dashboardBtn:focus {
+  border-color: greenyellow;
+  outline: none;
+}
+
+.diplayTableGroup {
+  font-weight: 500;
+  background-color: #191f2c;
+  color: white;
+}
+
+.textBox {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  /* margin: 5px 0px; */
+  border: 1px solid #3b3d42;
+  background: transparent !important;
+}
+
+.textBox:focus {
+  border: 1px solid slateblue;
+  outline: none;
+}
+
+.select {
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 5px 0px;
+  border: 1px solid #3b3d42;
+  background: transparent !important;
+  min-height: 40px;
+  margin-left: 10px;
+}
+
+.select:focus {
+  border: 1px solid slateblue;
+  outline: none;
+}
+
+.reactSelect {
+  font-size: 11pt;
+  min-width: 15rem;
+  max-width: 15rem;
+}
+
+.reactSelect:focus {
+  border: 1px solid slateblue !important;
+}
+
+.reactSelect__control {
+  border: 1px solid #3b3d42 !important;
+}
+
+.reactSelect__control:focus {
+  border: 1px solid slateblue !important;
+}
+
+/* .reactSelect__control:hover{
+  border: 1px solid red;
+} */
+
+.reactSelect__menu {
+  margin: 0px !important;
+}
+
+.dialogError {
+  color: rgb(205, 90, 90);
+  text-align: center;
+  padding-top: 3px;
+  min-height: 27px;
+}
+
+.dialogBtnSave {
+  background-color: white;
+  border: 2px solid slateblue;
+  border-radius: 6px;
+  padding: 3px 15px;
+  outline: 0;
+}
+
+.dialogBtnSave:focus {
+  color: black;
+  border-radius: 6px;
+  padding: 3px 15px;
+  background-color: rgba(105, 90, 205, 0.685);
+  border: 2px solid slateblue;
+  outline: 0px;
+  color: white;
+}
+
+.dialogBtnSave:hover {
+  color: black;
+  border-radius: 6px;
+  padding: 3px 15px;
+  background-color: rgba(105, 90, 205, 0.685);
+  border: 2px solid slateblue;
+  color: white;
+}
+
+.dialogBtnCancle {
+  margin-left: 20px;
+  border: 2px solid rgb(205, 90, 90);
+  outline: 0px;
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.dialogBtnCancle:hover {
+  margin-left: 20px;
+  border-radius: 6px;
+  padding: 3px 10px;
+  border: 2px solid rgb(205, 90, 90);
+  background-color: rgb(205, 90, 90);
+  color: white;
+}
+
+.dialogBtnCancle:focus {
+  margin-left: 20px;
+  border-radius: 6px;
+  padding: 3px 10px;
+  border: 2px solid rgb(204, 83, 83);
+  background-color: rgb(205, 90, 90);
+  color: white;
+  outline: 0px;
+}
+
+.orderFieldSet {
+  border: 2px solid #191f2c;
+  width: 275px;
+  border-radius: 6px;
+  margin: 15px 0px;
+  padding: 5px 10px;
+}
+
+.orderFieldSet legend {
+  padding: 0px 5px;
+  font-weight: 600;
+}
+
+.orderBtnAdd {
+  background-color: white;
+  border: 2px solid #191f2c;
+  border-radius: 6px;
+  padding: 3px 15px;
+  outline: 0;
+}
+
+.orderBtnAdd:focus {
+  color: black;
+  border-radius: 6px;
+  padding: 3px 15px;
+  background-color: #191f2c;
+  border: 2px solid #191f2c;
+  outline: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.orderBtnAdd:hover {
+  color: black;
+  border-radius: 6px;
+  padding: 3px 15px;
+  background-color: #191f2c;
+  border: 2px solid #191f2c;
+  outline: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.trasactionDate {
+  padding-left: 4px;
+  font-size: 10pt;
+  color: rgb(51, 51, 51);
+  width: 6rem;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: text;
+  min-height: 37px;
+  transition: all 100ms;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.trasactionDate:focus {
+  outline: none;
+  border-color: #191f2c;
+  border-width: 2px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.MuiPaper-root {
+  max-width: none !important;
+}
+
+.noPrintButton {
+  display: inherit;
+}
+
+.invHeader {
+  display: none;
+  text-align: center;
+}
+
+.invHeader h2 {
+  font-size: 15px;
+}
+
+.invHeader h3 {
+  font-size: 13px;
+}
+
+.invFooter {
+  display: none;
+  text-align: center;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+@media print {
+  .noPrintButton {
+    display: none;
+  }
+
+  .textBox {
+    border: 0px;
+  }
+
+  .invHeader {
+    display: block;
+  }
+
+  .invFooter {
+    display: block;
+  }
+
+  .diplayTable thead th {
+    background-color: white;
+    color: black;
+  }
+
+  .diplayTable tfoot th {
+    background-color: white;
+    color: black;
+  }
+}
+
+.invoice-billing .billing-table .invoice-billing-table thead tr th:nth-child(1),
+.invoice-billing
+  .billing-table
+  .invoice-billing-table
+  tbody
+  tr
+  td:nth-child(1) {
+  min-width: 5%;
+  width: 5%;
+}
+
+.invoice-billing .billing-table .invoice-billing-table thead tr th:nth-child(2),
+.invoice-billing
+  .billing-table
+  .invoice-billing-table
+  tbody
+  tr
+  td:nth-child(2) {
+}
+
+.invoice-billing .billing-table .invoice-billing-table thead tr th:nth-child(3),
+.invoice-billing
+  .billing-table
+  .invoice-billing-table
+  tbody
+  tr
+  td:nth-child(3) {
+  min-width: 5%;
+  width: 5%;
+}
+
+.invoice-billing .billing-table .invoice-billing-table thead tr th:nth-child(4),
+.invoice-billing
+  .billing-table
+  .invoice-billing-table
+  tbody
+  tr
+  td:nth-child(4) {
+  min-width: 10%;
+  width: 10%;
+}
+
+.invoice-billing .billing-table .invoice-billing-table thead tr th:nth-child(5),
+.invoice-billing
+  .billing-table
+  .invoice-billing-table
+  tbody
+  tr
+  td:nth-child(5) {
+  min-width: 10%;
+  width: 10%;
+}
+
+.invoice-billing .invoicebilling-title {
+  background-color: #ff6877;
+}
+
+/* .invoice-billing .invoiceBilling-details .billing-content{
+  max-width: 340px;
+  width: 100%;
+} */
+.invoice-billing .invoiceBilling-details .billing-content .react-date-picker {
+  width: 180px;
+}
+
+.invoice-billing
+  .invoiceBilling-details
+  .billing-content
+  .react-date-picker__clear-button,
+.invoice-billing
+  .invoiceBilling-details
+  .billing-content
+  .react-date-picker__calendar-button {
+  display: none;
+}
+
+.invoice-billing
+  .invoiceBilling-details
+  .billing-content
+  .react-date-picker__inputGroup {
+  padding: 5px 10px;
+}
+
+.invoice-billing
+  .invoiceBilling-details
+  .billing-content
+  .react-date-picker__wrapper {
+  border-radius: 6px;
+  border: 1px solid #3b3d42;
+}
+
+.invoice-billing .invoiceBilling-details .billing-content label {
+  color: #ff6877;
+}
+
+/* pc-css===================== */
+/* .pc-label label{
+  font-size: 16px;
+  font-weight: 500;
+ 
+}
+.pc-label{
+  margin-bottom: 8px;
+}
+.pc-textboxmail{
+  padding: 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: rgba(2,1,1,0);
+  background-color: #f6f7f9 !important;
+  width: 95%;
+
+}
+.pc-textboxname{
+  padding: 10px 10px;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: rgba(2,1,1,0);
+  background-color: #f6f7f9 !important;
+  width: 100%;
+} */
+.textBox:focus {
+  border: 1px solid #ff6877 !important;
+}
+
+.pc-diallogbtn {
+  background-color: rgb(255, 104, 119) !important;
+  border: none;
+  padding: 10px 25px !important;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.pc-diallogbtn:hover {
+  padding: 10px 25px !important;
+  border: none !important;
+}
+
+.pc-diallogbtn:focus {
+  padding: 10px 25px !important;
+  border: none !important;
+}
+
+.pc-dialsavebtn {
+  background-color: rgb(64, 64, 64) !important;
+  border: none;
+  padding: 10px 25px !important;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pc-dialsavebtn:hover {
+  padding: 10px 25px !important;
+  border: none !important;
+}
+
+.pc-dialsavebtn:focus {
+  padding: 10px 25px !important;
+  border: none !important;
+}
+
+.pc-custom-sec {
+  box-shadow: none !important;
+  border-radius: 15px;
+  /* border: 1px solid #bebebe;
+  height: calc(100vh - 110px); */
+}
+
+input[type="radio"] {
+  appearance: none;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  aspect-ratio: 1;
+  border: 1px solid rgb(255, 104, 119);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  aspect-ratio: 1;
+  border: 1px solid rgb(255, 104, 119);
+  background: rgb(255, 104, 119);
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+
+.pc-male-sec {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: rgb(255, 104, 119) !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffc3c9;
+}
+
+.square {
+  border-left: 5px solid #ff6877;
+  height: 100px;
+  border-radius: 0.25rem;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0px 3px rgb(0 0 0 / 30%);
+  margin-top: -94px;
+}

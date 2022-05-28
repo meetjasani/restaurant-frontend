@@ -1,0 +1,195 @@
+.main-close-img img {
+  display: none;
+}
+.pc-btn-sec {
+  display: flex;
+}
+
+.textBox:focus {
+  border: 1px solid #3b3d42 !important;
+}
+.pc-selectbox-sec {
+  margin: 0 !important;
+  background-color: transparent !important;
+  color: #a1afc1;
+}
+.pc-selectbox-sec-1 {
+  margin-bottom: 8px !important;
+  background-color: transparent !important;
+  color: #a1afc1;
+}
+.select:focus {
+  border: 1px solid #3b3d42 !important;
+}
+.ck.ck-editor__editable_inline {
+  padding: 0px 10px var(--ck-spacing-standard) !important;
+}
+.pc-closemega-icon {
+  display: none !important;
+}
+
+@media (min-width: 320px) and (max-width: 1399px) {
+  .pc-grid-sec {
+    grid-template-columns: inherit !important;
+  }
+  .swal2-title {
+    font-size: 20px !important;
+  }
+  .main-page-content-full {
+    padding: 18px !important;
+  }
+
+  .pc-closemega-icon {
+    left: 250px !important;
+    bottom: -35px !important;
+    position: relative;
+    display: block !important;
+    z-index: 99999999;
+  }
+  .main-sidebar-design {
+    width: 300px !important;
+  }
+  .main-close-img img {
+    display: block;
+    margin-right: 0 !important;
+    width: 25px !important;
+    height: 25px !important;
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
+  .pc-sec-header {
+    display: block !important;
+  }
+  .pc-flex-center {
+    display: block !important;
+  }
+  .pc-checkbox {
+    display: grid !important;
+    position: relative;
+  }
+  .pc-btn-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .pc-margin-sec {
+    margin-left: 0 !important;
+    justify-content: space-around !important;
+  }
+  .reservation {
+    margin-top: 20px;
+    width: auto !important;
+    margin: 15px 15px 0 15px;
+  }
+  .walkin {
+    margin-top: 20px;
+    width: auto !important;
+    margin: 10px 15px 15px 15px;
+  }
+  .pc-ant-link {
+    position: absolute;
+    right: 0;
+    top: -92%;
+  }
+  .ant-dropdown-trigger img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .material-icons {
+    display: block;
+  }
+  .main-close-img {
+    align-items: center;
+  }
+  .pageHeader {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .diplayTable-custom {
+    padding: 10px 0 !important;
+    overflow-x: scroll !important;
+  }
+  .diplayTable-custom .header th {
+    white-space: nowrap;
+  }
+  .main-page-content-full {
+    overflow-x: scroll !important;
+  }
+  .pc-icon-sec {
+    margin-left: 10px !important;
+  }
+
+  .pc-dropmenu {
+    width: 200px !important;
+    right: 60px !important;
+  }
+  .pc-datepiker {
+    right: 8px !important;
+  }
+  .pc-menusec {
+    right: 20px !important;
+  }
+  .pc-wrapsec {
+    white-space: nowrap;
+  }
+  .tablemain-title h3 {
+    font-size: 15px !important;
+  }
+  .css-46bh2p-MuiCardContent-root {
+    padding: 0 !important;
+  }
+  .pc-wsec-box {
+    min-width: 15rem !important;
+    max-width: 15rem !important;
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+  .orderBtnAdd {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .pc-form-method {
+    display: block !important;
+  }
+  .pc-whitespace-sec {
+    white-space: nowrap !important;
+  }
+  .pc-adduser-btn {
+    padding: 5px 4px !important;
+  }
+  .diplayTable {
+    margin-top: 15px !important;
+  }
+  .pc-spacesec {
+    white-space: nowrap;
+  }
+  .pc-diallogbtn {
+    margin-right: 0 !important;
+    padding: 10px 15px !important;
+  }
+  .pc-label {
+    white-space: nowrap !important;
+  }
+  .floating-btn {
+    bottom: 5px !important;
+    right: 0 !important;
+  }
+  .badget-main {
+    display: block !important;
+    width: auto !important;
+    bottom: 25px !important;
+    left: 9px !important;
+  }
+  .pc-budgetsec {
+    margin-bottom: 15px;
+    margin-right: 20px;
+  }
+  .pc-budgetsec:last-child {
+    margin-bottom: 0 !important;
+  }
+  .floating-btn button {
+    width: 90px !important;
+    height: 35px !important;
+  }
+  
+}
